@@ -1,13 +1,13 @@
-class Dog:
-  def init (self,name,age,gamesFetch):
-    self.name = name
-    self.age = age
-    self.gamesFetch = gamesFetch
+class OptionsContract:
+  def init (self,callOrPut,ticker,strikePrice,contractPrice,underlyingPrice,theta,delta,daysToExpiration):
+    self.callOrPut = callOrPut
+      #please add these for each variable..
     
-  def whoIs(self):
-    print("Name: " + self.name)
-    print("Age: " + str(self.age))
-    print("Games of Fetch Played: " + str(self.gamesFetch))
+  def quote(self):
+    print("This is a $" + str(self.strikePrice))+" "+self.callOrPut+" for $"+self.ticker+".")
+    print(self.ticker+" currently trades at $"+str(self.underlyingPrice)+" per share, and the contract is worth $"+str(self.contractPrice)+".")
+    print("The option expires in "+str(self.daysToExpiration)+" days.")
+
   
   def birthday(self):
     self.birthday = self.birthday + 1
