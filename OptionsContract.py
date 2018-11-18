@@ -4,7 +4,7 @@ class OptionsContract:
       #please add these for each variable..
     
   def quote(self):
-    print("This is a $" + str(self.strikePrice))+" for $"+self.ticker+".")
+    print("This is a $" + str(self.strikePrice)+" for $"+self.ticker+".")
     print(self.ticker+" currently trades at $"+str(self.underlyingPrice)+" per share, and the contract is worth $"+str(self.contractPrice)+".")
     print("The option expires in "+str(self.daysToExpiration)+" days.")
 
