@@ -1,5 +1,5 @@
 class OptionsContract:
-  def init (self,ticker,strikePrice,contractPrice,underlyingPrice,daysToExpiration):
+  def __init__ (self,ticker,strikePrice,contractPrice,underlyingPrice,daysToExpiration):
     self.ticker = ticker
       #please add these for each variable..
     
@@ -25,3 +25,4 @@ class OptionsContract:
       print("This contract is a weekly contract and will expire soon.")
     else:
       print("This is not a weekly contract.")
+      
