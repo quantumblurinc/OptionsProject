@@ -1,6 +1,10 @@
 class OptionsContract:
   def __init__ (self,ticker,strikePrice,contractPrice,underlyingPrice,daysToExpiration):
     self.ticker = ticker
+    self.strikePrice = strikePrice
+    self.contractPrice = contractPrice
+    self.underlyingPrice = underlyingPrice
+    self.daysToExpiration = daysToExpiration
       #please add these for each variable..
     
   def quote(self):
